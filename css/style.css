@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    scroll-behavior: smooth;
+}
+.body {
+    background-color: #C9C9C9;
+    font-size: 16px;
+    font-family: 'Montserrat', 'Roboto', 'Work+Sans', 'Helvetica', sans-serif;
+    font-weight: 400;
+}
+.header {
+    position: fixed;
+    height: 55px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+}
+.container {
+    max-width: 1920px;
+    padding: 0 40px;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.header-nav {
+    min-height: 270px;
+    min-height: 23px;
+}
+.header-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav li {
+    list-style: none;
+    font-size: 20px;
+    margin-right: 41px;
+}
+.header-nav a {
+    text-decoration: none;
+    color: black;
+    height: 23px; 
+} 
+.container .aside {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    height: 937px;
+    width: 1920px;
+    margin-top: 121px;
+    background-image: url(../img/Frame.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.text_menu li:not(:last-child) {
+    margin-bottom: 92px;
+}
+.text_menu li a {
+    min-width: 429px;
+    max-height: 50px;
+    margin-right: 217px;
+    border-bottom: 1px solid #bfbfbf;
+    text-decoration: none;
+    color: #000;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Roboto';   
+}
+.text_menu ol {
+     counter-reset: myCounter;
+}
+.text_menu  li {
+    list-style: none;
+}
+.text_menu li a:before {
+    counter-increment: myCounter;
+    content:counter(myCounter);
+    color: #000;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 10px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+}
+.hero {
+    width: 1920px;
+    height: 3843px;
+    background-color: white;
+    padding-left: 720px;
+    padding-top: 121px;
+    padding-right: 40px;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 900;
+}
+.hero .container {
+    position: sticky;
+}   
+.hero-introduction h2 {
+    font-family: 'Roboto';
+    margin-bottom: 33px;
+    line-height: 48px;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.hero-introduction p {
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+    font-size: 31px;
+}
+.hero-started h2 {
+    font-family: 'Monserrat';
+    margin-bottom: 33px;
+    line-height: 48px;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.hero-started p {
+    font-family: 'Monserrat';
+    margin-bottom: 20px;
+    font-size: 31px;}
+
+.hero-started p:before {
+    content: '+';
+}
+.hero-example h2 {
+    font-family: 'Work+Sans';
+    margin-bottom: 33px;
+    line-height: 48px;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.hero-example p {
+    font-family: 'Work+Sans';
+    margin-bottom: 20px;
+    font-size: 31px;
+}
